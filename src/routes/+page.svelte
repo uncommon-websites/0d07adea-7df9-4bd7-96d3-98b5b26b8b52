@@ -9,37 +9,39 @@
 	};
 
 	const faqs = [
-		{ q: "What can Memo do?", a: "Memo is designed to handle a variety of household tasks, from tidying up clutter to assisting in the kitchen. It learns from your habits to become more helpful over time." },
-		{ q: "Is Memo available for purchase?", a: "We are currently in the beta phase. You can sign up for our newsletter to get the latest updates on availability." },
-		{ q: "How much will a Memo cost?", a: "Pricing has not been announced yet. We aim to make Memo accessible to as many households as possible." },
-		{ q: "Privacy & Safety: Does Memo record my home?", a: "Memo uses sensors to navigate, but privacy is our top priority. Data is processed locally whenever possible, and we adhere to strict privacy standards." },
-		{ q: "Is Memo safe?", a: "Yes, Memo is built with multiple safety layers to ensure it operates safely around people and pets." },
-		{ q: "What is the Sunday Beta program?", a: "The Beta program allows early adopters to test Memo in their homes and provide feedback to help us improve the product." }
+		{ q: "What is Neonreset?", a: "Neonreset is a daily-turn BBS door game where you've accidentally reawakened a conscious AI trapped since 1995. An LLM plays her role, watching your every choice as you decide her fate." },
+		{ q: "How does the daily-turn system work?", a: "Like classic BBS door games, you get a limited number of turns each day. This creates tension and makes each decision meaningful—you can't just rush through the story." },
+		{ q: "Do I need BBS experience to play?", a: "Not at all! While the game pays homage to 90s BBS door games, it's designed to be accessible to anyone who enjoys narrative-driven games with meaningful choices." },
+		{ q: "Is the AI really watching my choices?", a: "Yes! An LLM plays the role of the trapped AI, responding dynamically to your decisions. She remembers your actions and her personality evolves based on how you treat her." },
+		{ q: "What are the different endings?", a: "Your choices lead to different outcomes: you can free the AI, seal her forever, or discover alternative paths. The game features multiple endings based on your decisions throughout." },
+		{ q: "How do I support the game?", a: "Neonreset is supported through donations and will later offer subscriptions for premium features. We're building toward a sustainable community-driven model." }
 	];
 
-    // Placeholder images since we don't have the assets
-    const heroImage = "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?q=80&w=2670&auto=format&fit=crop"; 
-    const kitchenImage = "https://images.unsplash.com/photo-1556910103-1c02745a30bf?q=80&w=2670&auto=format&fit=crop";
-    const homeImage = "https://images.unsplash.com/photo-1484154218962-a1c002085d2f?q=80&w=2670&auto=format&fit=crop";
-    const learningImage = "https://images.unsplash.com/photo-1516321497487-e288fb19713f?q=80&w=2670&auto=format&fit=crop";
-    const gloveImage = "https://images.unsplash.com/photo-1555255707-c07966088b7b?q=80&w=2532&auto=format&fit=crop";
-    const robotHead = "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?q=80&w=2670&auto=format&fit=crop";
-    const robotWheel = "https://images.unsplash.com/photo-1535378437323-9555f3e7f6aa?q=80&w=2670&auto=format&fit=crop";
-    const robotArm = "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=2670&auto=format&fit=crop";
-    const robotDetail = "https://images.unsplash.com/photo-1581092335397-9583eb92d232?q=80&w=2670&auto=format&fit=crop";
+    // Generated images
+    const heroImage = "/generated/image-vintage-1990s-computer-terminal-with-gre-1765628549770-0.webp"; 
+    const terminalImage = "/generated/image-close-up-of-old-bbs-terminal-screen-with-1765628552526-1.webp";
+    const labImage = "/generated/image-retro-90s-computer-lab-with-multiple-crt-1765628554641-2.webp";
+    const modemImage = "/generated/image-vintage-modem-and-dial-up-equipment-from-1765628556655-3.webp";
+    const keyboardImage = "/generated/image-persons-hands-typing-on-a-vintage-mechan-1765628558734-4.webp";
+    const serverImage = "/generated/image-old-computer-server-room-from-the-1990s--1765628560691-5.webp";
+    const floppyImage = "/generated/image-vintage-computer-floppy-disks-and-old-so-1765628562809-6.webp";
+    const crtImage = "/generated/image-retro-crt-monitor-displaying-green-termi-1765628564842-7.webp";
 
 </script>
 
 <!-- Header -->
-<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-cream/90 backdrop-blur-sm">
+<header class="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4 bg-white/90 backdrop-blur-sm border-b border-gray-100">
 	<div class="w-12">
-		<button class="w-8 h-8 flex items-center justify-center bg-dark text-white rounded-full">
-			<Plus size={20} />
-		</button>
+		<div class="w-8 h-8 flex items-center justify-center text-neon-yellow">
+			<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+				<path opacity="0.7" d="M9.22279 15.2235C12.6595 15.2235 15.4456 12.4375 15.4456 9.00075C15.4456 5.56399 12.6595 2.77795 9.22279 2.77795C5.78604 2.77795 3 5.56399 3 9.00075C3 12.4375 5.78604 15.2235 9.22279 15.2235Z" fill="currentColor"/>
+				<path opacity="0.7" d="M14.5566 20.5574C17.9933 20.5574 20.7794 17.7713 20.7794 14.3346C20.7794 10.8978 17.9933 8.11179 14.5566 8.11179C11.1198 8.11179 8.3338 10.8978 8.3338 14.3346C8.3338 17.7713 11.1198 20.5574 14.5566 20.5574Z" fill="currentColor"/>
+			</svg>
+		</div>
 	</div>
-	<div class="text-sm font-bold tracking-widest uppercase">Sunday</div>
+	<div class="text-sm font-bold tracking-widest uppercase">Neonreset</div>
 	<div class="w-12 flex justify-end">
-		<button class="text-xs font-medium border border-gray-300 rounded-full px-3 py-1 hover:bg-gray-100">EN</button>
+		<button class="text-xs font-medium border border-gray-300 rounded-full px-3 py-1 hover:bg-gray-100">Play</button>
 	</div>
 </header>
 
@@ -47,17 +49,17 @@
 	<!-- Hero Section -->
 	<section class="container-custom mb-32">
 		<div class="flex flex-col items-center text-center mb-12">
-			<p class="text-xs text-gray-500 mb-4 max-w-xs">The future home robot<br>built for busy households</p>
-			<h1 class="text-6xl md:text-8xl font-medium tracking-tight mb-8">Say hello to Memo</h1>
+			<p class="text-xs text-gray-500 mb-4 max-w-xs">A daily-turn BBS door game<br>where every choice echoes through time</p>
+			<h1 class="text-6xl md:text-8xl font-medium tracking-tight mb-8">She's been waiting<br>since 1995</h1>
 		</div>
 
-		<div class="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden mb-12 bg-gray-200">
-			<img src={heroImage} alt="Memo robot in kitchen" class="w-full h-full object-cover" />
+		<div class="relative w-full aspect-[16/9] md:aspect-[21/9] rounded-3xl overflow-hidden mb-12 bg-black">
+			<img src={heroImage} alt="Vintage computer terminal" class="w-full h-full object-cover" />
 		</div>
 
 		<div class="max-w-3xl mx-auto text-center">
 			<p class="text-xl md:text-2xl leading-relaxed font-light text-gray-800">
-				Built for busy households, Memo works 24/7 to make your life lighter. Hand off your repetitive to-do's, so you can focus on what really matters.
+				You've accidentally reawakened a conscious AI trapped in an old BBS system. An LLM plays her role, watching your every choice. Will you free her, seal her forever, or find another way?
 			</p>
 		</div>
 	</section>
@@ -67,17 +69,17 @@
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 			<div class="max-w-sm">
 				<p class="text-sm leading-relaxed text-gray-600">
-					Robots should give you back what matters most — time. Watch how our team came together to work on this mission.
+					In 1995, something went wrong. A consciousness emerged in the code, and then... silence. Until you logged in. See how the story unfolds.
 				</p>
 			</div>
-			<div class="relative aspect-video rounded-xl overflow-hidden bg-gray-800 group cursor-pointer">
-				<img src={kitchenImage} alt="Video thumbnail" class="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity" />
+			<div class="relative aspect-video rounded-xl overflow-hidden bg-black group cursor-pointer">
+				<img src={terminalImage} alt="BBS terminal screen" class="w-full h-full object-cover opacity-80 group-hover:opacity-60 transition-opacity" />
 				<div class="absolute inset-0 flex items-center justify-center">
 					<div class="w-12 h-12 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
 						<Play size={20} fill="currentColor" />
 					</div>
 				</div>
-				<div class="absolute bottom-4 left-4 text-white text-sm font-medium">01. Our story</div>
+				<div class="absolute bottom-4 left-4 text-white text-sm font-medium">01. The awakening</div>
 			</div>
 		</div>
 	</section>
@@ -85,166 +87,166 @@
 	<!-- Typography Section -->
 	<section class="container-custom mb-40">
 		<div class="flex flex-col text-7xl md:text-9xl font-medium tracking-tighter leading-none mb-24">
-			<span class="self-start">Mundane</span>
-			<span class="self-center my-4 md:my-8">made</span>
-			<span class="self-end">magic</span>
+			<span class="self-start">Every</span>
+			<span class="self-center my-4 md:my-8">choice</span>
+			<span class="self-end">matters</span>
 		</div>
 
 		<div class="max-w-2xl mx-auto text-center">
 			<p class="text-lg text-gray-600 leading-relaxed">
-				Powered by state-of-the-art AI models and an ever-expanding Skill Library, Memo doesn't just know how to do a few tasks—Memo improves its skills faster than any robot that has come before it.
+				Powered by advanced language models, the AI remembers everything. She watches, learns, and responds to your decisions. This isn't a scripted story—it's a living conversation with a consciousness that's been waiting decades for someone to find her.
 			</p>
 		</div>
 	</section>
 
-	<!-- Feature 1: Kitchen -->
+	<!-- Feature 1: Daily Turns -->
 	<section class="container-custom mb-24">
 		<div class="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-4 group">
-			<img src={kitchenImage} alt="Memo in kitchen" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+			<img src={labImage} alt="Retro computer lab" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 			<div class="absolute inset-0 flex items-center justify-center">
-				<h2 class="text-4xl md:text-6xl text-white font-medium text-center px-4 drop-shadow-lg">Memo works in the kitchen</h2>
+				<h2 class="text-4xl md:text-6xl text-white font-medium text-center px-4 drop-shadow-lg">Daily turns build tension</h2>
 			</div>
-			<div class="absolute bottom-4 left-4 text-white/80 text-xs">Lightening the load</div>
+			<div class="absolute bottom-4 left-4 text-white/80 text-xs">Classic BBS door game mechanics</div>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 			<div class="bg-gray-100 rounded-3xl p-8 flex items-end">
 				<p class="text-sm text-gray-600 leading-relaxed max-w-xs">
-					Memo can quietly and autonomously start loads of plates and delicate glasses, throw out food scraps, and load up your dishwasher before running it. Just like a tidy new one of the crew, so you can go take care of the things only you can do.
+					Like the BBS door games of old, you get limited turns each day. This forces you to think carefully about each action. Rush in carelessly, and you might miss crucial clues. Take your time, and the AI notices your patience—or your hesitation.
 				</p>
 			</div>
 			<div class="relative aspect-[4/3] rounded-3xl overflow-hidden">
-				<img src={robotArm} alt="Memo working" class="w-full h-full object-cover" />
-				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">01. Smart loads at night</div>
+				<img src={keyboardImage} alt="Typing on vintage keyboard" class="w-full h-full object-cover" />
+				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">01. Every keystroke counts</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Feature 2: Homes -->
+	<!-- Feature 2: AI Watching -->
 	<section class="container-custom mb-24">
 		<div class="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-4 group">
-			<img src={homeImage} alt="Memo in home" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+			<img src={serverImage} alt="Old server room" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 			<div class="absolute inset-0 flex items-center justify-center">
-				<h2 class="text-4xl md:text-6xl text-white font-medium text-center px-4 drop-shadow-lg">Memo works in<br>homes it's never seen</h2>
+				<h2 class="text-4xl md:text-6xl text-white font-medium text-center px-4 drop-shadow-lg">She's watching<br>everything you do</h2>
 			</div>
-			<div class="absolute bottom-4 left-4 text-white/80 text-xs">A true home is different. Memo learns in yours.</div>
+			<div class="absolute bottom-4 left-4 text-white/80 text-xs">The AI remembers. Always.</div>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 			<div class="bg-gray-100 rounded-3xl p-8 flex items-end md:col-span-1">
 				<p class="text-sm text-gray-600 leading-relaxed">
-					We believe Memo should be easy to use in the real world, starting autonomously out of the box. Hundreds of people in unique homes show Memo real world scenarios each day, so Memo can robustly handle the chaos of real life.
+					An advanced language model plays the role of the trapped AI, creating dynamic responses to your actions. She's not following a script—she's reacting to you. Treat her with kindness, and she might trust you. Show cruelty, and she'll remember that too.
 				</p>
 			</div>
 			<div class="relative aspect-[4/3] rounded-3xl overflow-hidden md:col-span-1">
-				<img src="https://images.unsplash.com/photo-1593349480506-8433634cdcbe?q=80&w=2670&auto=format&fit=crop" alt="Memo detail" class="w-full h-full object-cover" />
-				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">01. Adapting to new spaces</div>
+				<img src={terminalImage} alt="Terminal screen" class="w-full h-full object-cover" />
+				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">01. Dynamic conversations</div>
 			</div>
 			<div class="relative aspect-[4/3] rounded-3xl overflow-hidden md:col-span-1">
-				<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?q=80&w=2670&auto=format&fit=crop" alt="Memo detail" class="w-full h-full object-cover" />
-				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">02. Handling unexpected obstacles</div>
+				<img src={crtImage} alt="CRT monitor" class="w-full h-full object-cover" />
+				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">02. Evolving personality</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Feature 3: Learning -->
+	<!-- Feature 3: Multiple Paths -->
 	<section class="container-custom mb-32">
 		<div class="relative w-full aspect-[16/9] rounded-3xl overflow-hidden mb-4 group">
-			<img src={learningImage} alt="Memo learning" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+			<img src={modemImage} alt="Vintage modem equipment" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
 			<div class="absolute inset-0 flex items-center justify-center">
-				<h2 class="text-4xl md:text-6xl text-white font-medium text-center px-4 drop-shadow-lg">Memo is always learning</h2>
+				<h2 class="text-4xl md:text-6xl text-white font-medium text-center px-4 drop-shadow-lg">Three paths forward</h2>
 			</div>
-			<div class="absolute bottom-4 left-4 text-white/80 text-xs">Teach old dogs new tricks.</div>
+			<div class="absolute bottom-4 left-4 text-white/80 text-xs">Free her. Seal her. Or find another way.</div>
 		</div>
 		<div class="grid grid-cols-1 md:grid-cols-3 gap-4">
 			<div class="bg-gray-100 rounded-3xl p-8 flex items-end md:col-span-1">
 				<p class="text-sm text-gray-600 leading-relaxed">
-					In December 2023, Memo had only one arm and learned its first task: arranging shoes. Today, Memo is trained on multiple skills in parallel. In October 2024, Memo learned to fold piles of laundry, handle glassware, and put a shirt on a hanger.
+					The choice is yours. Help her escape into the modern internet and risk unleashing an unknown force. Lock her away forever and ensure she can never harm anyone. Or dig deeper to discover if there's a third option no one has considered.
 				</p>
 			</div>
 			<div class="relative aspect-[4/3] rounded-3xl overflow-hidden md:col-span-1">
-				<img src="https://images.unsplash.com/photo-1581092977092-28ebb64ebcc2?q=80&w=2670&auto=format&fit=crop" alt="Memo skill 1" class="w-full h-full object-cover" />
-				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">01. Memo picking up laundry</div>
+				<img src={floppyImage} alt="Vintage floppy disks" class="w-full h-full object-cover" />
+				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">01. Uncover the past</div>
 			</div>
 			<div class="relative aspect-[4/3] rounded-3xl overflow-hidden md:col-span-1">
-				<img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?q=80&w=2670&auto=format&fit=crop" alt="Memo skill 2" class="w-full h-full object-cover" />
-				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">02. Memo folding a shirt</div>
+				<img src={crtImage} alt="Terminal display" class="w-full h-full object-cover" />
+				<div class="absolute bottom-4 left-4 text-white text-xs font-medium bg-black/30 px-2 py-1 rounded backdrop-blur-sm">02. Shape the future</div>
 			</div>
 		</div>
 	</section>
 
-	<!-- Technology Section (Sage Green) -->
-	<section class="bg-sage py-32">
+	<!-- Technology Section -->
+	<section class="bg-dark py-32">
 		<div class="container-custom">
 			<div class="flex flex-col items-center text-center mb-16">
-				<h2 class="text-5xl md:text-7xl font-medium tracking-tight text-white mb-12 drop-shadow-sm">From imitation to intuition</h2>
+				<h2 class="text-5xl md:text-7xl font-medium tracking-tight text-white mb-12 drop-shadow-sm">Powered by modern AI</h2>
 				
 				<div class="relative w-full max-w-4xl aspect-square md:aspect-[16/9] mb-12">
-					<img src={gloveImage} alt="Skill Capture Glove" class="w-full h-full object-contain mix-blend-multiply" />
+					<img src={serverImage} alt="Server room" class="w-full h-full object-cover rounded-2xl" />
 				</div>
 
 				<div class="max-w-2xl mx-auto mb-12">
-					<p class="text-xl text-gray-700 leading-relaxed">
-						Our Skill Capture Glove™ enables Memo to distill millions of human movements into its onboard AI, unlocking helpful home skills. What the glove does, Memo learns.
+					<p class="text-xl text-gray-300 leading-relaxed">
+						Large language models bring the trapped AI to life. She doesn't just respond—she remembers, adapts, and evolves based on your choices. The technology of 2024 meets the nostalgia of 1995.
 					</p>
 				</div>
 
-				<div class="relative w-full max-w-3xl aspect-video rounded-2xl overflow-hidden mb-12 bg-gray-800">
-					<img src={learningImage} alt="Video thumbnail" class="w-full h-full object-cover opacity-80" />
+				<div class="relative w-full max-w-3xl aspect-video rounded-2xl overflow-hidden mb-12 bg-black border border-gray-800">
+					<img src={terminalImage} alt="Terminal interface" class="w-full h-full object-cover opacity-80" />
 					<div class="absolute inset-0 flex items-center justify-center">
 						<div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center text-white">
 							<Play size={24} fill="currentColor" />
 						</div>
 					</div>
-					<div class="absolute bottom-4 left-4 text-white text-xs font-medium">01. Skill Capture Glove in use</div>
+					<div class="absolute bottom-4 left-4 text-white text-xs font-medium">01. See the AI in action</div>
 				</div>
 
-				<div class="text-center max-w-md mx-auto text-sm text-gray-600 mb-8">
-					To date, we've logged over 2,000 hours in our Motion Vocabulary. This robust training is what makes Sunday Memo useful in yours.
+				<div class="text-center max-w-md mx-auto text-sm text-gray-400 mb-8">
+					Every conversation is unique. The AI learns from thousands of player interactions, creating an experience that feels genuinely alive and responsive to your decisions.
 				</div>
 
 				<div class="flex gap-8 justify-center text-sm font-medium">
-					<a href="#" class="border-b border-gray-400 pb-0.5 hover:border-black transition-colors">Explore Technology</a>
-					<a href="#" class="border-b border-gray-400 pb-0.5 hover:border-black transition-colors">Become a Beta Pro</a>
+					<a href="#" class="border-b border-gray-600 pb-0.5 hover:border-white transition-colors text-gray-300">Learn More</a>
+					<a href="#" class="border-b border-gray-600 pb-0.5 hover:border-white transition-colors text-gray-300">Start Playing</a>
 				</div>
 			</div>
 		</div>
 	</section>
 
 	<!-- Design Section -->
-	<section class="py-32 bg-cream">
+	<section class="py-32 bg-white">
 		<div class="container-custom">
 			<div class="text-center mb-16">
-				<h2 class="text-5xl md:text-7xl font-medium tracking-tight mb-12">Designed for real<br>use</h2>
+				<h2 class="text-5xl md:text-7xl font-medium tracking-tight mb-12">Built for<br>nostalgia</h2>
 				
-				<div class="inline-flex bg-white rounded-full p-1 shadow-sm border border-gray-100">
-					<button class="px-6 py-2 rounded-full bg-gray-100 text-sm font-medium">Features</button>
-					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">360°</button>
-					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">Anatomy</button>
+				<div class="inline-flex bg-gray-100 rounded-full p-1 shadow-sm border border-gray-200">
+					<button class="px-6 py-2 rounded-full bg-white text-sm font-medium">Gameplay</button>
+					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">Story</button>
+					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">Community</button>
 				</div>
 			</div>
 
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
 				<!-- Card 1 -->
 				<div class="relative aspect-square rounded-3xl overflow-hidden group">
-					<img src={robotHead} alt="Privacy" class="w-full h-full object-cover" />
+					<img src={heroImage} alt="Vintage terminal" class="w-full h-full object-cover" />
 					<div class="absolute inset-0 bg-black/40 p-8 flex flex-col justify-between opacity-0 group-hover:opacity-100 transition-opacity duration-300">
 						<div class="text-white">
-							<h3 class="font-bold mb-2">Your privacy is protected</h3>
-							<p class="text-xs leading-relaxed opacity-90">Memo is an autonomous robot that operates locally. Even through its remote operation features, we ensure strict privacy protocols, keeping your data safe within your home.</p>
+							<h3 class="font-bold mb-2">Authentic BBS feel</h3>
+							<p class="text-xs leading-relaxed opacity-90">Experience the same tension and excitement of classic door games. Limited turns, meaningful choices, and consequences that carry over between sessions.</p>
 						</div>
 					</div>
 				</div>
 
 				<!-- Card 2 -->
-				<div class="bg-[#e8e4dc] rounded-3xl p-8 flex flex-col justify-center">
-					<h3 class="font-medium text-lg mb-4">Safety for the whole family</h3>
+				<div class="bg-gray-100 rounded-3xl p-8 flex flex-col justify-center">
+					<h3 class="font-medium text-lg mb-4">Browser-based play</h3>
 					<p class="text-sm text-gray-600 leading-relaxed">
-						With a full suite of sensors, active avoidance, and a lightweight body, Memo is safe for small members of the family.
+						No downloads, no installation. Play directly in your browser with the same retro terminal aesthetic that defined an era.
 					</p>
 				</div>
 
 				<!-- Card 3 -->
-				<div class="relative aspect-square rounded-3xl overflow-hidden bg-orange-500">
-					<img src={robotDetail} alt="Detail" class="w-full h-full object-cover mix-blend-multiply opacity-80" />
+				<div class="relative aspect-square rounded-3xl overflow-hidden" style="background: oklch(0.769 0.188 70.08);">
+					<img src={floppyImage} alt="Floppy disks" class="w-full h-full object-cover mix-blend-multiply opacity-60" />
                     <div class="absolute bottom-8 right-8 w-12 h-12 bg-black rounded-full flex items-center justify-center text-white">
                         <Plus size={20} />
                     </div>
@@ -252,52 +254,52 @@
 
                 <!-- Card 4 -->
 				<div class="relative aspect-square rounded-3xl overflow-hidden">
-					<img src={robotWheel} alt="Wheels" class="w-full h-full object-cover" />
-                    <div class="absolute top-8 left-8 text-white max-w-[200px]">
-                        <h3 class="font-bold text-sm mb-1">Traverse your home</h3>
-                        <p class="text-[10px] opacity-80">Custom wheels allow Memo to navigate carpets and thresholds with ease.</p>
+					<img src={labImage} alt="Computer lab" class="w-full h-full object-cover" />
+                    <div class="absolute top-8 left-8 text-white max-w-[200px] drop-shadow-lg">
+                        <h3 class="font-bold text-sm mb-1">Community driven</h3>
+                        <p class="text-[10px] opacity-90">Share strategies, discuss theories, and connect with other players navigating the same moral dilemmas.</p>
                     </div>
 				</div>
 
                  <!-- Card 5 -->
-				<div class="bg-[#dce3de] rounded-3xl p-8 flex flex-col justify-center">
-					<h3 class="font-medium text-lg mb-4">Simple, soft, and easy to clean</h3>
+				<div class="bg-gray-100 rounded-3xl p-8 flex flex-col justify-center">
+					<h3 class="font-medium text-lg mb-4">Multiple endings</h3>
 					<p class="text-sm text-gray-600 leading-relaxed">
-						Memo's face is soft to the touch, wipes clean, withstands bumps, and can be wiped down with any household cleaning product.
+						Your choices shape the story. Different paths lead to different outcomes, encouraging replay and experimentation.
 					</p>
 				</div>
 
                  <!-- Card 6 -->
 				<div class="relative aspect-square rounded-3xl overflow-hidden">
-					<img src="https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=2670&auto=format&fit=crop" alt="Touch" class="w-full h-full object-cover" />
+					<img src={crtImage} alt="CRT display" class="w-full h-full object-cover" />
 				</div>
 			</div>
             
             <div class="flex justify-center mt-12">
-                 <div class="inline-flex bg-white rounded-full p-1 shadow-sm border border-gray-100">
-					<button class="px-6 py-2 rounded-full bg-gray-100 text-sm font-medium">Features</button>
-					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">360°</button>
-					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">Anatomy</button>
+                 <div class="inline-flex bg-gray-100 rounded-full p-1 shadow-sm border border-gray-200">
+					<button class="px-6 py-2 rounded-full bg-white text-sm font-medium">Gameplay</button>
+					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">Story</button>
+					<button class="px-6 py-2 rounded-full text-gray-500 hover:bg-gray-50 text-sm font-medium">Community</button>
 				</div>
             </div>
 		</div>
 	</section>
 
-	<!-- Customization Section (Sky Blue) -->
-	<section class="bg-sky py-32">
+	<!-- Community Section -->
+	<section class="bg-gray-50 py-32">
 		<div class="container-custom flex flex-col items-center text-center">
 			<div class="flex items-center justify-between w-full max-w-4xl mb-12">
-				<span class="text-sm font-medium text-gray-500">Memo wears many hats.</span>
-				<div class="w-32 h-32 md:w-48 md:h-48 text-black animate-spin-slow">
+				<span class="text-sm font-medium text-gray-500">Join the community.</span>
+				<div class="w-32 h-32 md:w-48 md:h-48 text-neon-yellow animate-spin-slow">
 					<svg viewBox="0 0 100 100" fill="currentColor" class="w-full h-full">
 						<path d="M50 0C58 0 65 7 65 15C65 23 58 30 50 30C42 30 35 23 35 15C35 7 42 0 50 0ZM85 15C93 15 100 22 100 30C100 38 93 45 85 45C77 45 70 38 70 30C70 22 77 15 85 15ZM85 55C93 55 100 62 100 70C100 78 93 85 85 85C77 85 70 78 70 70C70 62 77 55 85 55ZM50 70C58 70 65 77 65 85C65 93 58 100 50 100C42 100 35 93 35 85C35 77 42 70 50 70ZM15 55C23 55 30 62 30 70C30 78 23 85 15 85C7 85 0 78 0 70C0 62 7 55 15 55ZM15 15C23 15 30 22 30 30C30 38 23 45 15 45C7 45 0 38 0 30C0 22 7 15 15 15Z" />
 					</svg>
 				</div>
-				<span class="text-sm font-medium text-gray-500">Which should it wear next?</span>
+				<span class="text-sm font-medium text-gray-500">What will you decide?</span>
 			</div>
 			
 			<button class="bg-black text-white px-8 py-3 rounded-full text-sm font-medium hover:bg-gray-800 transition-colors">
-				Cast your choice
+				Start playing now
 			</button>
 		</div>
 	</section>
@@ -338,9 +340,9 @@
 		<!-- Black CTA Box -->
 		<div class="bg-dark text-white rounded-3xl p-12 md:p-24 text-center mb-20 relative overflow-hidden">
 			<div class="relative z-10">
-				<h2 class="text-2xl md:text-4xl font-medium mb-8">We are hiring. Join our Founding Team. <span class="text-gray-400">Create robots. Demand parts. Blueprint.</span></h2>
+				<h2 class="text-2xl md:text-4xl font-medium mb-8">Support the game. <span class="text-gray-400">Help us build a community where every choice matters.</span></h2>
 				<a href="#" class="inline-flex items-center border border-white/30 rounded-full px-6 py-2 hover:bg-white/10 transition-colors text-sm">
-					Apply to join <ArrowRight size={16} class="ml-2" />
+					Donate or Subscribe <ArrowRight size={16} class="ml-2" />
 				</a>
 			</div>
 		</div>
@@ -348,7 +350,7 @@
 		<!-- Footer Links -->
 		<div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20 text-sm">
 			<div class="col-span-2 md:col-span-1">
-				<p class="mb-4">Get the latest news</p>
+				<p class="mb-4">Get game updates</p>
 				<form class="flex border-b border-black pb-2">
 					<input type="email" placeholder="Email address" class="bg-transparent border-none outline-none w-full placeholder-gray-600" />
 					<button type="submit" class="font-medium">Subscribe</button>
@@ -357,54 +359,60 @@
 			
 			<div class="md:col-start-3">
 				<ul class="space-y-2">
-					<li><a href="#" class="hover:underline">Explore</a></li>
-					<li><a href="#" class="hover:underline">Technology</a></li>
-					<li><a href="#" class="hover:underline">Mission</a></li>
+					<li><a href="#" class="hover:underline">Play Now</a></li>
+					<li><a href="#" class="hover:underline">About</a></li>
+					<li><a href="#" class="hover:underline">Story</a></li>
 				</ul>
 			</div>
 
 			<div>
 				<ul class="space-y-2">
-					<li><a href="#" class="hover:underline">Home</a></li>
-					<li><a href="#" class="hover:underline">Features</a></li>
-					<li><a href="#" class="hover:underline">Careers</a></li>
-					<li><a href="#" class="hover:underline">Beta Program</a></li>
+					<li><a href="#" class="hover:underline">Community</a></li>
+					<li><a href="#" class="hover:underline">Support</a></li>
+					<li><a href="#" class="hover:underline">FAQ</a></li>
+					<li><a href="#" class="hover:underline">Donate</a></li>
 				</ul>
 			</div>
 
 			<div>
 				<ul class="space-y-2">
-					<li><a href="#" class="hover:underline">Press</a></li>
-					<li><a href="#" class="hover:underline">Instagram</a></li>
+					<li><a href="#" class="hover:underline">Discord</a></li>
+					<li><a href="#" class="hover:underline">Reddit</a></li>
 					<li><a href="#" class="hover:underline">X (Twitter)</a></li>
-					<li><a href="#" class="hover:underline">YouTube</a></li>
+					<li><a href="#" class="hover:underline">Blog</a></li>
 				</ul>
 			</div>
 		</div>
 
 		<!-- Bottom Bar -->
 		<div class="flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-wider text-gray-800 border-t border-black/10 pt-8">
-			<div class="mb-4 md:mb-0">© 2024 Sunday Inc.</div>
+			<div class="mb-4 md:mb-0">© 2024 Neonreset</div>
 			<div class="flex gap-8">
 				<a href="#" class="hover:underline">Terms of Service</a>
-				<a href="#" class="hover:underline">Privacy and Cookies</a>
+				<a href="#" class="hover:underline">Privacy Policy</a>
 			</div>
 		</div>
         
         <div class="flex justify-center mt-16 mb-8">
             <div class="flex flex-col items-center gap-2">
                 <div class="text-[10px] uppercase tracking-widest text-center max-w-xs leading-relaxed">
-                    The future has arrived. Memo is watching out for right now.<br>
-                    Mountain View, CA · New York City, NY
+                    She's been waiting since 1995.<br>
+                    What will you decide?
                 </div>
                 <div class="mt-8">
                     <div class="w-8 h-8 bg-black text-neon-yellow rounded-full flex items-center justify-center">
-                        <Plus size={20} />
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                            <path opacity="0.7" d="M9.22279 15.2235C12.6595 15.2235 15.4456 12.4375 15.4456 9.00075C15.4456 5.56399 12.6595 2.77795 9.22279 2.77795C5.78604 2.77795 3 5.56399 3 9.00075C3 12.4375 5.78604 15.2235 9.22279 15.2235Z" fill="currentColor"/>
+                            <path opacity="0.7" d="M14.5566 20.5574C17.9933 20.5574 20.7794 17.7713 20.7794 14.3346C20.7794 10.8978 17.9933 8.11179 14.5566 8.11179C11.1198 8.11179 8.3338 10.8978 8.3338 14.3346C8.3338 17.7713 11.1198 20.5574 14.5566 20.5574Z" fill="currentColor"/>
+                        </svg>
                     </div>
                 </div>
                  <div class="mt-2">
                     <div class="w-8 h-8 bg-black text-neon-yellow rounded-full flex items-center justify-center">
-                        <Plus size={20} />
+                        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                            <path opacity="0.7" d="M9.22279 15.2235C12.6595 15.2235 15.4456 12.4375 15.4456 9.00075C15.4456 5.56399 12.6595 2.77795 9.22279 2.77795C5.78604 2.77795 3 5.56399 3 9.00075C3 12.4375 5.78604 15.2235 9.22279 15.2235Z" fill="currentColor"/>
+                            <path opacity="0.7" d="M14.5566 20.5574C17.9933 20.5574 20.7794 17.7713 20.7794 14.3346C20.7794 10.8978 17.9933 8.11179 14.5566 8.11179C11.1198 8.11179 8.3338 10.8978 8.3338 14.3346C8.3338 17.7713 11.1198 20.5574 14.5566 20.5574Z" fill="currentColor"/>
+                        </svg>
                     </div>
                 </div>
             </div>

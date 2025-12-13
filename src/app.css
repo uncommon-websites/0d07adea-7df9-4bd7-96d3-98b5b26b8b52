@@ -2,18 +2,18 @@
 
 @theme {
 	/* Colors */
-	--color-cream: #f9f8f4;
-	--color-sage: #e0e5e0;
-	--color-sky: #dff0f0;
-	--color-neon-yellow: #eefc5e;
-	--color-dark: #1a1a1a;
-	--color-dark-gray: #2d2d2d;
+	--color-cream: #fafafa;
+	--color-sage: #1a1a1a;
+	--color-sky: #0a0a0a;
+	--color-neon-yellow: oklch(0.769 0.188 70.08);
+	--color-dark: #0a0a0a;
+	--color-dark-gray: #1a1a1a;
 	
 	--font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 :root {
-	background-color: var(--color-cream);
+	background-color: #ffffff;
 	color: var(--color-dark);
 	font-family: var(--font-sans);
 }
